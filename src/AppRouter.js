@@ -6,7 +6,7 @@ import {Routes, Route } from 'react-router-dom';
 
 
 export const AppRouter = () => {
-  //window.addEventListener("contextmenu", (e) => e.preventDefault());
+  window.addEventListener("contextmenu", (e) => e.preventDefault());
   return (
     <Routes>
 

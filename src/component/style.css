@@ -1,9 +1,23 @@
 .header{
    margin-left: 481px;
    padding: 50px;
+   color: blue;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+.header:hover{
+    color: red;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Montserrat';
+}
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -13,10 +27,8 @@ body{
     background-color: antiquewhitex;
 }
 .container{
-    display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: center;
+    max-width: 1200px;
+	margin: 0 auto;
 }
 
 

@@ -1,4 +1,38 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+:root {
+	--color-fire: #ff7402;
+	--color-grass: #9bcc50;
+	--color-steel: #9eb7b8;
+	--color-water: #4592c4;
+	--color-psychic: #f366b9;
+	--color-ground: #ab9842;
+	--color-ice: #51c4e7;
+	--color-flying: #3dc7ef;
+	--color-ghost: #4d5b64;
+	--color-normal: #a4acaf;
+	--color-poison: #7e0058;
+	--color-rock: #a38c21;
+	--color-fighting: #d56723;
+	--color-dark: #707070;
+	--color-bug: #729f3f;
+	--color-dragon: linear-gradient(180deg, #53a4cf 50%, #f16e57 50%);
+	--color-electric: #bba909;
+	--color-fairy: #fdb9e9;
+	--color-shadow: #7b62a3;
+	--color-unknow: #757575;
+
+	--color-primary: #006d77;
+	--color-primary-hover: #83c5be;
+}
+
+
+.container {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
 /* Card List Pokemon */
 .card-list-pokemon {
 	display: grid;
@@ -13,7 +47,6 @@
 
 .card-img {
 	background-color: #f2f2f2;
-
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -55,23 +88,23 @@
 
 /* Types of Pokemon */
 .water {
-	background-color: blue;
+	background-color: var(--color-water);
 }
 
 .grass {
-	background-color: rgb(81, 223, 81);
+	background-color: var(--color-grass);
 }
 
 .poison {
-	background-color: rgb(103, 1, 1);
+	background-color: var(--color-poison);
 }
 
 .fire {
-	background-color: orange;
+	background-color: var(--color-fire);
 }
 
 .bug {
-	background-color: darkgreen);
+	background-color: var(--color-bug);
 }
 
 .dragon {
@@ -79,101 +112,56 @@
 }
 
 .flying {
-	background-color: coral;
+	background-color: var(--color-flying);
 }
 
 .ground {
-	background-color: brown;
+	background-color: var(--color-ground);
 }
 
 .steel {
-	background-color: steelblue;
+	background-color: var(--color-steel);
 }
 
 .psychic {
-	background-color: gold;
+	background-color: var(--color-psychic);
 }
 
 .ice {
-	background-color: rgb(156, 156, 228);
+	background-color: var(--color-ice);
 }
 
 .ghost {
-	background-color: rgb(105, 100, 89);
+	background-color: var(--color-ghost);
 }
 
 .normal {
-	background-color: yellow;
+	background-color: var(--color-normal);
 }
 
 .rock {
-	background-color: rgb(60, 68, 44);
+	background-color: var(--color-rock);
 }
 
 .electric {
-	background-color: rgb(224, 224, 140);
+	background-color: var(--color-electric);
 }
 
 .fighting {
-	background-color: red;
+	background-color: var(--color-fighting);
 }
 
 .fairy {
-	background-color: gold;
+	background-color: var(--color-fairy);
 }
 
 .dark {
-	background-color: rgb(67, 58, 58);
+	background-color: var(--color-dark);
 }
 
-/* Container Filters */
-.container-filters {
-	display: flex;
-	justify-content: center;
-
-	position: fixed;
-	top: 0;
-	left: -300px;
-	width: 250px;
-
-	color: #555;
-	background-color: #f2f2f2;
-	height: 100%;
-	padding-top: 140px;
-	transition: all 0.3s linear;
-}
-
-.container-filters.active {
-	left: 0;
-}
-
-.filter-by-type {
-	display: flex;
-	flex-direction: column;
-
-	gap: 20px;
-}
-
-.filter-by-type span {
-	font-weight: 700;
-	font-size: 22px;
-}
-
-.group-type {
-	display: flex;
-	gap: 10px;
-
-	margin-left: 15px;
-}
-
-.group-type label {
-	cursor: pointer;
-}
 
 /* 
-======================================= 
 Styles of Pokemon Single Page
-======================================= 
 */
 
 .main-pokemon {
@@ -275,10 +263,12 @@ Styles of Pokemon Single Page
 .progress-bar {
 	width: 100%;
 	height: 30px;
-	background-color: blueviolet;
+	background-color: var(--color-primary);
 	border-radius: 10px;
 }
 
 .containerCancel{
-margin-right: 10px;
+	display: flex;
+   justify-content: center;
+   padding-top: 50px;
 }

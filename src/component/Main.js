@@ -37,7 +37,7 @@ export const Main = () => {
 
     return (
         <>
-          <h1 className="header">PokeDex -- Find Your Pokemon</h1>
+          <h1 className="header">PokeDex Find Your Pokemon</h1>
             <div className="container">
                 <div className="left-content">
                     <PokeCard pokemon={pokeData} loading={loading} />

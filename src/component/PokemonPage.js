@@ -28,15 +28,13 @@ export const PokemonPage = () => {
 	
 
 	return (
+		
 		<main className='container main-pokemon'>
 			{loading ? (
 				<Loader />
 			) : (
 				<>
-					<Link className='containerCancel' to={`/`}>
-						<CloseIcon  />
-					</Link>
-					<div className='header-main-pokemon'>
+					<div className='header-main-pokemon'>					
 						<span className='number-pokemon'>#{pokemon.id}</span>
 						<div className='container-img-pokemon'>
 							<img
@@ -71,7 +69,7 @@ export const PokemonPage = () => {
 						<h1>Abilities</h1>
 						<div className='stats'>
 							<div className='stat-group'>
-								<span>Hp</span>
+								<span>HP</span>
 								<div className='progress-bar'></div>
 								<span className='counter-stat'>
 									{pokemon.stats[0].base_stat}
@@ -114,6 +112,9 @@ export const PokemonPage = () => {
 							</div>
 						</div>
 					</div>
+					<Link className='containerCancel' to={`/`}>
+						<CloseIcon  />
+					</Link>
 				</>
 			)}
 		</main>
