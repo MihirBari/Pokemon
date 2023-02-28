@@ -1,0 +1,84 @@
+.type{
+    display: flex;
+    flex-direction: column;
+}
+
+.type1{
+    color: rgb(196, 159, 103);
+}
+
+.type2{
+    color: blue;
+}
+
+.card{
+  width: 14vmax;
+  display: flex;
+  flex-direction: column;
+  text-decoration: none;
+  color: rgb(64, 58, 58);
+  margin: 2vmax;
+  transition: all 0.5s;
+  padding-bottom: 0.5vmax;
+  cursor: grab;
+}
+
+.card img{
+    width: 130px;
+    height: 130px;
+}
+
+.card:hover {
+  box-shadow: 0 0 5px rgba(15, 15, 15, 0.26);
+
+  transform: translateY(-1vmax);
+}
+
+.detail-wrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+  .detail-wrapper button {
+    color: rgb(22, 22, 22);
+    padding: .5rem;
+    margin-top: 1rem;
+    border: none;
+    border-radius: 0.2rem;
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.185);
+  }
+  h2 {
+    margin-bottom: 0.2rem;
+  }
+
+.rock {
+    background-color: rgb(148, 81, 81);
+  }
+  .ghost {
+    background-color: rgb(247, 247, 247);
+  }
+  .electric {
+    background-color: rgb(201, 201, 123);
+  }
+  .bug {
+    background-color: #6a4815;
+  }
+  .poison {
+    background-color: #9622c4;
+  }
+  .normal {
+    background-color: #d61818;
+  }
+  .fairy {
+    background-color: rgba(34, 26, 27, 0.863);
+  }
+  .fire {
+    background-color: #FBE3DF;
+  }
+  .grass {
+    background-color:#E2F9E1;
+  }
+  .water {
+    background-color:#E0F1FD;
+  }
