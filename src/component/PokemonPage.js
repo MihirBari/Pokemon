@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
-import { Loader } from '../component/Loader/Loader';
+import { Loader } from './Loader/Loader';
 import { PokemonContext } from '../context/PokemonContext';
 import CloseIcon from '@mui/icons-material/Close';
 import "./PokemonPage.css"
